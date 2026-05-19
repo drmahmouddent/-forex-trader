@@ -1,0 +1,68 @@
+===========================================
+   FOREX TRADER - IMPORTANT INFORMATION
+   EUR/USD Automated Trading System
+===========================================
+
+APP LINKS:
+----------
+Frontend (Dashboard): https://forex-trader-db449.web.app
+Backend API: https://forex-backend-iubj.onrender.com
+GitHub Repo: https://github.com/drmahmouddent/-forex-trader
+
+FIREBASE:
+---------
+Project ID: forex-trader-db449
+App ID: 1:895738865438:web:bfc64bea59f144c500cb0f
+Email: mahmoudabdelall18@gmail.com
+Console: https://console.firebase.google.com/project/forex-trader-db449
+
+RENDER.COM:
+-----------
+Service: forex-backend
+Service ID: srv-d866jl0jo89c7387v77g
+API Key: rnd_a9q1UC5tLZoP5bi3GrpoJYk8BVk8
+Dashboard: https://dashboard.render.com/web/srv-d866jl0jo89c7387v77g
+
+GITHUB:
+-------
+Username: drmahmouddent
+Repo: https://github.com/drmahmouddent/-forex-trader
+
+MT5 BRIDGE (Run on your Windows PC):
+-------------------------------------
+Location: forex-trader/mt5-bridge/
+Start Command: python bridge.py
+Port: 5000
+Requires: MetaTrader 5 terminal running
+
+TRADING CONFIG:
+---------------
+Pair: EUR/USD
+Timeframe: M15 (15 minutes)
+Risk Per Trade: 2%
+Max Daily Loss: 5%
+Max Weekly Loss: 10%
+Max Open Trades: 3
+
+STRATEGIES:
+-----------
+1. London Breakout (7-10 UTC)
+2. Trend Following (EMA 9/21 + RSI + MACD)
+3. Support/Resistance Bounce
+
+HOW TO START TRADING:
+---------------------
+1. Open MetaTrader 5 on your PC and login
+2. Run mt5-bridge/start.bat (or python bridge.py)
+3. Run mt5-bridge/setup_ngrok.bat to expose bridge
+4. Update Render environment with ngrok URL
+5. Open https://forex-trader-db449.web.app
+6. Click "Start Bot" on the dashboard
+
+CREDENTIALS NEEDED:
+-------------------
+- MT5 Login: (your MT5 account number)
+- MT5 Password: (your MT5 password)
+- MT5 Server: (your broker server name)
+
+===========================================
