@@ -11,7 +11,7 @@ from typing import Optional, Dict, List
 import logging
 
 from config.settings import config
-from services.mt5_service import mt5_service
+from services.mt5_cloud_service import mt5_cloud_service as mt5_service
 from services.news_monitor import news_monitor
 from services.risk_manager import risk_manager, TradeRecord
 from strategies.strategy_manager import strategy_manager

@@ -10,7 +10,7 @@ import json
 import logging
 
 from services.trading_engine import trading_engine
-from services.mt5_service import mt5_service
+from services.mt5_cloud_service import mt5_cloud_service as mt5_service
 from services.news_monitor import news_monitor
 from services.risk_manager import risk_manager
 from strategies.strategy_manager import strategy_manager
