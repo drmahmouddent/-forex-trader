@@ -1,0 +1,47 @@
+type User @table {
+  displayName: String!
+  createdAt: Timestamp!
+  email: String
+  photoUrl: String
+  timezone: String
+}
+
+type CurrencyPair @table {
+  symbol: String!
+  baseCurrency: String!
+  quoteCurrency: String!
+  createdAt: Timestamp!
+  description: String
+}
+
+type Strategy @table {
+  user: User!
+  name: String!
+  createdAt: Timestamp!
+  description: String
+  rules: String
+}
+
+type Trade @table {
+  user: User!
+  currencyPair: CurrencyPair!
+  strategy: Strategy
+  entryPrice: Float!
+  exitPrice: Float
+  volume: Float!
+  direction: String!
+  status: String!
+  entryTime: Timestamp!
+  exitTime: Timestamp
+  createdAt: Timestamp!
+  profitOrLoss: Float
+  commission: Float
+  notes: String
+}
+
+type WatchlistEntry @table {
+  user: User!
+  currencyPair: CurrencyPair!
+  addedAt: Timestamp!
+  priceAlertLevel: Float
+}
